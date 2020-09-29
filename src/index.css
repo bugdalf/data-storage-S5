@@ -50,3 +50,27 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (min-width: 1280px) {
+  .Main {
+    border: solid 1px red;
+    height: 90vh;
+    width: 100vw;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .Header {
+    margin-right: 3rem;
+  }
+
+  .Storage {
+    width: 60rem;
+    margin-top: 3rem;
+  }
+
+  .Info {
+    top: 20rem;
+    left: 98rem;
+  }
+}
