@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Main {
+  border: solid 1px red;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Header {
+  border: solid 1px green;
+  width: 33rem;
+  height: 18rem;
+  padding: 4rem;
+  border-radius: 10px 90px 10px 10px;
+}
+
+.Storage {
+  border: solid 1px pink;
+  width: 33rem;
+  height: 15rem;
+  margin-top: 2rem;
+  padding: 3rem;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.Info {
+  border: solid 1px orange;
+  width: 15rem;
+  height: 6rem;
+  position: absolute;
+  top: 46rem;
+}
+
+.attribution {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
