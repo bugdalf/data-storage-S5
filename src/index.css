@@ -36,10 +36,30 @@ body {
 .Header {
   /* border: solid 1px green; */
   width: 33rem;
-  height: 18rem;
-  padding: 4rem;
+  height: 20rem;
+  padding: 2.5rem 4rem;
   border-radius: 10px 90px 10px 10px;
   background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Buttons__container {
+  /* border: solid 1px pink; */
+  display: flex;
+}
+
+.Button {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Storage {
@@ -51,16 +71,37 @@ body {
   border-radius: 10px 10px 10px 10px;
   background-color: var(--dark-blue);
   color: white;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Storage > input {
+  margin-top: 2rem;
 }
 
 .Info {
   /* border: solid 1px orange; */
-  width: 15rem;
-  height: 6rem;
+  width: 18rem;
+  height: 7rem;
   position: absolute;
   top: 44.5rem;
   border-radius: 10px;
   background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Info > h1 {
+  font-size: 3.8rem;
+}
+
+.Info > p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--grayish-blue);
 }
 
 .attribution {
