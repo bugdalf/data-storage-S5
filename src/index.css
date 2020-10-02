@@ -19,6 +19,8 @@ html {
 
 body {
   background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Raleway", sans-serif;
 }
 
@@ -105,15 +107,14 @@ body {
   background-color: var(--pale-blue);
   border-radius: 50%;
   border: solid 1px rgba(237, 67, 174, 1);
-
   cursor: pointer;
 }
 
 .Storage__capacity {
   /* border: solid 1px pink; */
-  width: inherit;
+  width: 95%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .Storage__capacity > p {
@@ -125,7 +126,7 @@ body {
   width: 18rem;
   height: 7rem;
   position: absolute;
-  top: 44.5rem;
+  top: 46rem;
   border-radius: 10px;
   background-color: white;
   display: flex;
@@ -148,11 +149,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+.attribution > a {
+  color: aqua;
+}
+
+@media screen and (min-width: 400px) {
+  .Info {
+    top: 49rem;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  body {
+    background-image: url("../images/bg-desktop.png");
+    background-size: 100% 50%;
+    background-position: bottom;
+    background-color: var(--very-dark-blue);
+  }
+
   .Main {
-    border: solid 1px red;
     height: 90vh;
     width: 100vw;
     flex-direction: row;
@@ -165,11 +183,50 @@ body {
 
   .Storage {
     width: 60rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
+    align-items: flex-start;
+  }
+
+  .Storage__range {
+    width: 54rem;
   }
 
   .Info {
     top: 20rem;
-    left: 98rem;
+    left: 95rem;
+    border-radius: 10px 10px 0 10px;
+  }
+
+  .Info::after {
+    content: "";
+    display: inline-block;
+    border-left: 20px solid transparent;
+    /* border-right: 10px solid transparent; */
+    border-top: 20px solid white;
+    position: absolute;
+    bottom: -15px;
+    left: 160px;
+  }
+
+  .attribution {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Storage__capacity {
+    /* border: solid 1px pink; */
+    width: 100%;
+  }
+
+  .Info {
+    top: 32rem;
+    left: 123rem;
+    border-radius: 10px 10px 0 10px;
+  }
+
+  body {
+    background-size: 100% 60%;
+    background-position: 0 405px;
   }
 }
