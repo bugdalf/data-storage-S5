@@ -126,7 +126,7 @@ body {
   width: 18rem;
   height: 7rem;
   position: absolute;
-  top: 46rem;
+  top: calc(50% + 15rem);
   border-radius: 10px;
   background-color: white;
   display: flex;
@@ -154,12 +154,6 @@ body {
 
 .attribution > a {
   color: aqua;
-}
-
-@media screen and (min-width: 400px) {
-  .Info {
-    top: 49rem;
-  }
 }
 
 @media screen and (min-width: 1280px) {
