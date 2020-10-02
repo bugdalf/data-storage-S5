@@ -32,16 +32,22 @@
       </div>
 
       <div class="Storage">
-        <p>You’ve used <strong>815 GB</strong> of your storage</p>
-        <input type="range" class="Storage__range" id="Storage__range"/>
+        <p>You’ve used <strong id="Use__data">815 GB</strong> of your storage</p>
+        <div class="Range__container">
+          <input type="range" class="Storage__range" id="Storage__range" min="0" max="1000" value="815"/>
+          <div class="ProgressBar" id="ProgressBar"></div>
+          <div class="Selector" id="Selector">
+            <div class="SelectBtn"></div>
+          </div>
+        </div>
         <div class="Storage__capacity">
           <p><strong>0 GB</strong></p>
-          <p><strong>0 GB</strong></p>
+          <p><strong>1000 GB</strong></p>
         </div>
       </div>
 
       <div class="Info">
-        <h1>185</h1>
+        <h1 id="Left__data">185</h1>
         <p>GB LEFT</p>
       </div>
     </main>
@@ -52,5 +58,6 @@
         Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="./src/index.js"></script>
   </body>
 </html>
