@@ -2,15 +2,13 @@
 
 ![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
 
-Mira el resultado [Demo]()
+Mira el resultado [Demo](https://bugdalf.github.io/data-storage-S5/)
 
 **Para realizar este reto, se utilizo HTML CSS y JS**
 
 **Que aprendí**
 
 - Linear gradient en css y manipular el valor del gradient con js
-
-**Realizado por:** [@ankynator](https://twitter.com/ankynator)
 
 ## Créditos por el diseño y reto.
 
